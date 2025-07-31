@@ -2,6 +2,8 @@
 
 local o = vim.opt
 
+vim.cmd("colorscheme everforest") -- set colorscheme to Everforest
+
 -- general options
 o.clipboard = "unnamedplus" -- use system clipboard
 o.completeopt = { "menu", "menuone", "noselect" } -- completion options
