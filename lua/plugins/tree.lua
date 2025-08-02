@@ -29,11 +29,12 @@ return {
     ---@type TSConfig
     ---@diagnostic disable-next-line: missing-fields
     opts = {
-        highlight = { enable = true },
+        highlight = { enable = true, use_languagetree = true, },
         indent = { enable = true },
         ensure_installed = {
             "bash",
             "c",
+            "cpp",
             "html",
             "javascript",
             "typescript",
