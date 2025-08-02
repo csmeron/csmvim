@@ -33,4 +33,4 @@ o.incsearch = true -- incremental search
 o.hlsearch = true -- highlight search results
 
 -- other
--- will be used when lualine is available
+o.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
