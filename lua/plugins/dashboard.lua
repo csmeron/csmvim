@@ -28,7 +28,16 @@ return {
 			-- Replace LazyVim-specific buttons with general alternatives
 			dashboard.section.buttons.val = {
 				dashboard.button("f", " " .. " Find file", "<cmd> Telescope find_files <cr>"),
-				dashboard.button("n", " " .. " New file", "<cmd> enew <cr>"),
+                dashboard.button("n", " " .. " New File ", function()
+                    local file_path = vim.fn.input("New file path (relative to cwd): ", "", "file")
+                    if file_path ~= "" then
+                        if vim.fn.filereadable(file_path) == 1 then
+                            print("Error: File already exists!")
+                        else
+                            vim.cmd("e " .. file_path)
+                        end
+                    end
+                end),
 				dashboard.button("r", " " .. " Recent files", "<cmd> Telescope oldfiles <cr>"),
 				dashboard.button("g", " " .. " Find text", "<cmd> Telescope live_grep <cr>"),
 				dashboard.button("c", " " .. " Config", "<cmd> e $MYVIMRC <cr>"),
