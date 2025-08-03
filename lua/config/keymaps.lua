@@ -51,3 +51,6 @@ map("n", "<leader>ex", function()
         require("alpha").start()
     end
 end, { desc = "Toggle Dashboard" })
+
+-- Theme swapper
+map("n", "<leader>th", "<cmd>Themery<CR>", { desc = "Open theme switcher" })

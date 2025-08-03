@@ -2,7 +2,7 @@
 
 local o = vim.opt
 
-vim.cmd("colorscheme everforest") -- set colorscheme to Everforest
+-- vim.cmd("colorscheme everforest") -- set colorscheme to Everforest
 
 -- general options
 o.clipboard = "unnamedplus" -- use system clipboard
@@ -24,6 +24,7 @@ o.smartcase = true -- override 'ignorecase' if search pattern contains uppercase
 -- ui/numbers/etc.
 o.number = true -- enable line numbers
 o.relativenumber = false -- can be toggled with <leader>rn, defined in keymaps.lua
+o.numberwidth = 1
 o.splitbelow = true
 o.splitright = true
 o.showmode = true -- temporary, will be using lualine later
