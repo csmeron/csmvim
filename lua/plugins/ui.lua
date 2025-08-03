@@ -121,6 +121,12 @@ return {
 
     -- extra ui components
     { "MunifTanjim/nui.nvim", lazy = true },
-    "folke/twilight.nvim",
+    {
+        "folke/twilight.nvim",
+        opts = {
+            alpha = 0.75,
+        },
+    },
+
 }
 
