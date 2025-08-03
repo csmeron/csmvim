@@ -1,3 +1,6 @@
+-- this dashboard setup is ENTIRELY based off of the LazyVim dashboard,
+-- and is more or less identical, save for a modification or two to 
+-- one of the buttons.
 return {
 	{ "folke/snacks.nvim", opts = { dashboard = { enabled = false } } },
 
@@ -34,6 +37,8 @@ return {
                         if vim.fn.filereadable(file_path) == 1 then
                             print("Error: File already exists!")
                         else
+                            -- create parent directories if needed
+                            vim.fn.mkdir(vim.fn.fnamemodify(file_path, ":h"), "p")
                             vim.cmd("e " .. file_path)
                         end
                     end
