@@ -8,7 +8,7 @@ local o = vim.opt
 o.clipboard = "unnamedplus" -- use system clipboard
 o.completeopt = { "menu", "menuone", "noselect" } -- completion options
 o.mouse = "a" -- enable mouse support
--- o.cursorline = true -- comment/uncomment to enable cursor line highlighting
+o.cursorline = true -- comment/uncomment to enable cursor line highlighting
 o.cursorlineopt = "number" -- highlight the number under the cursor
 
 -- tabs/indentation
@@ -24,7 +24,7 @@ o.smartcase = true -- override 'ignorecase' if search pattern contains uppercase
 -- ui/numbers/etc.
 o.number = true -- enable line numbers
 o.relativenumber = false -- can be toggled with <leader>rn, defined in keymaps.lua
-o.numberwidth = 1
+o.numberwidth = 4
 o.splitbelow = true
 o.splitright = true
 o.showmode = true -- temporary, will be using lualine later
