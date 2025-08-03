@@ -70,6 +70,7 @@ return {
             },
         },   
     },
+    "folke/snacks.nvim",
     {
         "nvim-treesitter/nvim-treesitter-context",
         opts = function()
