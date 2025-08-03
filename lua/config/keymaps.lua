@@ -42,3 +42,12 @@ map("n", "<C-c>", "<cmd>%y+<CR>", opts) -- general copy (entire) file
 -- visual xtras
 map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
+
+-- return to dashboard/dashboard related commands
+map("n", "<leader>ex", function()
+    if vim.bo.filetype == "alpha" then
+        vim.cmd("b#") -- go to previous buffer
+    else
+        require("alpha").start()
+    end
+end, { desc = "Toggle Dashboard" })
