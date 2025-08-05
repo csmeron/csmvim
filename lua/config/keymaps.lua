@@ -52,5 +52,11 @@ map("n", "<leader>ex", function()
     end
 end, { desc = "Toggle Dashboard" })
 
+map("n", "<leader>q", function()
+    if vim.bo.filetype == "alpha" then
+        vim.cmd("b#") -- go to previous buffer
+    else
+        require("alpha").start()
+    end
+end, { desc = "Toggle Dashboard" })
 -- Theme swapper
-map("n", "<leader>th", "<cmd>Themery<CR>", { desc = "Open theme switcher" })
