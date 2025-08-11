@@ -4,9 +4,7 @@
 local M = {}
 
 -- Keymap helper, primarily used in core/keymaps
-M.map = function(mode, lhs, rhs, opts)
-	vim.keymap.set(mode, lhs, rhs, opts or { noremap = true, silent = true })
-end
+M.map = vim.keymap.set
 
 function M.load_directory(module_prefix, opts)
 	local exclude = {}
