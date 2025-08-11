@@ -9,6 +9,7 @@ local core = {
 	"core.keymaps",
 	"core.options",
 	"core.autocmds",
+	"config.lualine.basic",
 }
 
 -- send plugins to the lazy bootstrap
