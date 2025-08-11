@@ -5,6 +5,7 @@ local plugs = {
 }
 -- Import core modules
 local core = {
+	"core.keymaps",
 	"core.options",
 	"core.autocmds",
 }
