@@ -30,3 +30,6 @@ o.showmode = true -- temporary, will be using lualine later
 -- searching
 o.incsearch = true -- incremental search
 o.hlsearch = true -- highlight search results
+
+-- other
+o.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]] -- use Snacks status column
