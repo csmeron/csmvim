@@ -3,7 +3,7 @@
 local o = vim.opt
 
 -- general options
-o.clipboard = "unnamedplus" -- use system clipboard
+-- o.clipboard = "unnamedplus" -- use system clipboard
 o.completeopt = { "menu", "menuone", "noselect" } -- completion options
 o.mouse = "a" -- enable mouse support
 o.cursorline = true -- comment/uncomment to enable cursor line highlighting
