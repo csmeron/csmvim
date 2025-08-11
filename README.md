@@ -1,10 +1,12 @@
 # CSMvim
 This repo is the host/storage for my personal Neovim config.
 
-This config was heavily inspired by both [LazyVim](https://github.com/LazyVim/LazyVim) and [NvChad](https://github.com/NvChad/NvChad), which I used
-prior to fully learning Lua and Vim/Neovim as a whole. 
+This config was heavily inspired by both [LazyVim](https://github.com/LazyVim/LazyVim) and 
+[NvChad](https://github.com/NvChad/NvChad), which I used prior to fully learning Lua and 
+Vim/Neovim as a whole. 
 
-Therefore, much credit goes to those two projects for inspiration.
+Therefore, much credit goes to those two projects for inspiration, particularly to LazyVim
+for the inspiration for file structure and general aesthetic.
 
 ## Features
 - Lazy loaded via [lazy.nvim](https://github.com/folke/lazy.nvim)
