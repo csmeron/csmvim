@@ -2,6 +2,7 @@
 -- Import plugins (these will be used in core.lazy)
 local plugs = {
 	{ import = "plugins.ui" },
+	{ import = "plugins.snacks" },
 }
 -- Import core modules
 local core = {
