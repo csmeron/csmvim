@@ -6,7 +6,8 @@ This config was heavily inspired by both [LazyVim](https://github.com/LazyVim/La
 Vim/Neovim as a whole. 
 
 Therefore, much credit goes to those two projects for inspiration, particularly to LazyVim
-for the inspiration for file structure and general aesthetic.
+for the inspiration for the core Lazy/Autocmd file structure and aesthetic, as well as for
+the autocmds in general. They're wonderfully helpful.
 
 ## Features
 - Lazy loaded via [lazy.nvim](https://github.com/folke/lazy.nvim)
