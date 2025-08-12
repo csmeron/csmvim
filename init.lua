@@ -4,6 +4,7 @@ local plugs = {
 	{ import = "plugins.ui" },
 	{ import = "plugins.coding" },
 	{ import = "plugins.snacks" },
+    { import = "plugins.editor" },
 }
 -- Import core modules
 local core = {
