@@ -2,6 +2,9 @@
 ---@diagnostic disable: undefined-global
 local o = vim.opt
 
+-- netrw tree style (defined here for now, may relocate down the line)
+vim.g.netrw_liststyle = 3
+
 -- general options
 -- o.clipboard = "unnamedplus" -- use system clipboard
 o.completeopt = { "menu", "menuone", "noselect" } -- completion options
