@@ -14,4 +14,7 @@ util.map("n", "<C-c>", "<cmd>%y+<CR>", opts) -- general copy (entire) file
 util.map("v", "<", "<gv", opts)
 util.map("v", ">", ">gv", opts)
 
+util.map("n", "<leader>x", function()
+    Snacks.bufdelete(n)
+end, { desc = "Close Current Buffer" })
 util.load_directory("core.keymaps", { exclude = { "init" } })
