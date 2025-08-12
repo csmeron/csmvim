@@ -2,7 +2,7 @@
 local util = require("core.util")
 
 vim.g.mapleader = " "
-vim.api.nvim_set_keymap("n", ";", ":", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", ";", ":", { noremap = true, silent = false })
 
 -- Some keymaps are defined in their respective plugins' specs, such as
 -- bufferline, for example, as its mappings are part of its setup.
