@@ -70,6 +70,7 @@ return {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons", -- fore file icons
 			"Smiteshp/nvim-navic", -- for LSP symbols
+			"meuter/lualine-so-fancy.nvim",
 		},
 	},
 	-- noice to improve style of ui/notifications
