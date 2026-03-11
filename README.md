@@ -1,1 +1,2 @@
-# csmvim
+WORK-IN-PROGRESS NEOVIM CONFIG
+
