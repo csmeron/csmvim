@@ -2,15 +2,8 @@
 return {
 	-- Treesitter
 	"nvim-treesitter/nvim-treesitter",
-	version = false,
-	build = ":TSUpdate",
-	event = { "LazyFile", "VeryLazy" },
-	---@diagnostic disable-next-line: undefined-global
-	lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening from command line
-	init = function(plugin)
-		require("lazy.core.loader").add_to_rtp(plugin)
-		require("nvim-treesitter.query_predicates")
-	end,
+	lazy = false,
+	build = ':TSUpdate',
 	cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
 	keys = {
 		{ "<c-space>", desc = "Increment Selection" },
