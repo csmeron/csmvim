@@ -1,6 +1,18 @@
 -- Spec for explorer related modules
 return {
-	-- Make netrw pretty
-	{ "prichrd/netrw.nvim", opts = {} },
+	-- Uncomment the following two lines to use netrw instead of the snacks explorer
+    ---- Make netrw pretty
+	--{ "prichrd/netrw.nvim", opts = {} },
 
+	-- Snacks explorer
+    -- Replaces netrw
+    {
+        "folke/snacks.nvim",
+        opts = {
+            explorer = {
+                enabled = true,
+                replace_netrw = true,
+            },
+        },
+    },
 }
