@@ -6,12 +6,15 @@
 local plugs = {
 	{ import = "plugins.editor" },
     { import = "plugins.coding" },
+	{ import = "plugins.ui" },
 }
 
 -- Import core modules (things like keymaps, vim.opts, etc.)
 local core = {
 	"core.keymaps",
 	"core.options",
+	"core.autocmd",
+	"config.lualine.basic",
 }
 
 -- Send plugins to the lazy bootstrap
