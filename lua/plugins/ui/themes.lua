@@ -34,6 +34,7 @@ return {
 		---@type string|fun()
 		config = function()
 			require("kanagawa").setup({
+                transparent = true,
 				colors = {
 					theme = {
 						all = {
@@ -73,6 +74,16 @@ return {
 		"rose-pine/neovim",
 		priority = 1000,
 		name = "rose-pine",
+        ---@type string|fun()
+        config = function()
+            require("rose-pine").setup({
+                variant = "auto",
+                dark_variant = "moon",
+                styles = {
+                    transparency = true,
+                },
+            })
+        end,
 	},
 
 	-- Onedark

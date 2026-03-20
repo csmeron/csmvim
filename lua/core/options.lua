@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 -- Base `vim.opt variable
 local o = vim.opt
 

@@ -1,4 +1,4 @@
---@diagnostic disable: undefined-global
+---@diagnostic disable: undefined-global
 
 -- This file contains any utility functions
 local M = {}
