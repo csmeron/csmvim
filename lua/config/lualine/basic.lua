@@ -1,5 +1,6 @@
 -- Lualine Configuration
 -- This configuration is mainly implemented from their github repository.
+-- This Lualine config is sponsored by Chepy Industries
 
 require("lualine").setup({
 	options = {
