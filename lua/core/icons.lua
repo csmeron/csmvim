@@ -66,6 +66,7 @@ return {
          Unit          = " ",
          Value         = " ",
          Variable      = "󰀫 ",
+         Brad          = "󰘏 ",
        },
     },
 }
