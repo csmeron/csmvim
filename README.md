@@ -1,4 +1,4 @@
-# osmnvim
+# OSMNVIM
 
 This repo holds my personal Neovim config.
 
