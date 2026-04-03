@@ -4,6 +4,7 @@ local theme_list = {
 	"kanagawa-wave",
 	"kanagawa-dragon",
 	"kanagawa-lotus",
+    "melange",
 	"everforest",
 	"rose-pine",
 	"onedark",
@@ -48,7 +49,7 @@ return {
 		end,
 	},
 
-	-- Everforest
+  	-- Everforest
 	{
 		"neanias/everforest-nvim",
 		version = false,
@@ -108,6 +109,13 @@ return {
 	{
 		"shaunsingh/nord.nvim",
 		name = "nord",
+		priority = 1000,
+	},
+    
+	-- Melange
+	{
+        "savq/melange-nvim",
+		name = "melange",
 		priority = 1000,
 	},
 }
