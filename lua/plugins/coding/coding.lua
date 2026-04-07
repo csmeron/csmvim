@@ -17,7 +17,17 @@ return {
 			-- better deal with markdown code blocks
 			markdown = true,
 		},
-    }
-
-
+    },
+    -- better comments
+    {
+        "folke/ts-comments.nvim",
+        event = "VeryLazy",
+        opts = {},
+    },
+    -- incremental renaming
+    {
+        "smjonas/inc-rename.nvim",
+        cmd = "IncRename",
+        opts = {},
+    },
 }
